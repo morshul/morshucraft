@@ -2,4 +2,9 @@
   <PropertyGroup Label="C#">
     <LangVersion>11.0</LangVersion>
   </PropertyGroup>
+  <ItemGroup Label="License">
+    <None Include="$(MSBuildThisFileDirectory)morshucraft.licenseheader">
+      <Link>morshucraft.licenseheader</Link>
+    </None>
+  </ItemGroup>
 </Project>
