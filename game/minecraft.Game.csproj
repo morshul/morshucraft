@@ -1,11 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="C#">
+    <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <ItemGroup Label="Package References">
-  </ItemGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\resources\minecraft.Game.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenTK.Core" Version="4.7.5" />
+    <PackageReference Include="OpenTK.Windowing.GraphicsLibraryFramework" Version="4.7.5" />
   </ItemGroup>
 </Project>
