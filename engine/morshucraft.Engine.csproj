@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup Label="Project References">
+    <ProjectReference Include="..\api\morshucraft.API.csproj" />
     <ProjectReference Include="..\resources\morshucraft.Resources.csproj" />
   </ItemGroup>
   <ItemGroup Label="Package References">
