@@ -1,12 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup Label="C#">
+  <PropertyGroup Label="Project">
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
-  <ItemGroup Label="File System">
+  <ItemGroup Label="Resources">
     <EmbeddedResource Include="Textures/**/*" />
     <EmbeddedResource Include="Shaders/**/*" />
-    <EmbeddedResource Include="Fonts/**/*" />
-    <EmbeddedResource Include="Samples/**/*" />
-    <EmbeddedResource Include="Tracks/**/*" />
   </ItemGroup>
 </Project>

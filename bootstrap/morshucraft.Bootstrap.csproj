@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup Label="C#">
+  <PropertyGroup Label="Project">
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>true</ImplicitUsings>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup Label="Project References">
-    <ProjectReference Include="..\resources\minecraft.Game.Resources.csproj" />
+    <ProjectReference Include="../engine/morshucraft.Engine.csproj" />
   </ItemGroup>
 </Project>
