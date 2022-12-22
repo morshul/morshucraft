@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morshucraft.Resources", "re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morshucraft.Tests", "tests\morshucraft.Tests.csproj", "{EBD5511D-FD7F-471E-956E-2BDE77D735EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morshucraft.Engine", "engine\morshucraft.Engine.csproj", "{BF23DE37-6CAB-4407-B88A-5EDB17F18C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morshucraft.Bootstrap", "bootstrap\morshucraft.Bootstrap.csproj", "{6FE46286-E56C-4065-ADF4-95AFF6399157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{EBD5511D-FD7F-471E-956E-2BDE77D735EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD5511D-FD7F-471E-956E-2BDE77D735EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD5511D-FD7F-471E-956E-2BDE77D735EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF23DE37-6CAB-4407-B88A-5EDB17F18C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF23DE37-6CAB-4407-B88A-5EDB17F18C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF23DE37-6CAB-4407-B88A-5EDB17F18C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF23DE37-6CAB-4407-B88A-5EDB17F18C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE46286-E56C-4065-ADF4-95AFF6399157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE46286-E56C-4065-ADF4-95AFF6399157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE46286-E56C-4065-ADF4-95AFF6399157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE46286-E56C-4065-ADF4-95AFF6399157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
