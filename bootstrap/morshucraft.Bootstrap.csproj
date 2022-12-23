@@ -7,5 +7,6 @@
   </PropertyGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="../engine/morshucraft.Engine.csproj" />
+    <ProjectReference Include="../modules/sample-module/morshucraft.Modules.SampleModule.csproj" />
   </ItemGroup>
 </Project>
