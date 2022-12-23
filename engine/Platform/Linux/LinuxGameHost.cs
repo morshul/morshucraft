@@ -9,14 +9,14 @@ public sealed class LinuxGameHost : GameHost
 {
     protected override void OnActivated()
     {
-        Console.WriteLine($"[LinuxGameHost] Hello, world!");
+        Logger.Information("Hello, world!");
 
         base.OnActivated();
     }
 
     protected override void OnDeactivated()
     {
-        Console.WriteLine($"[LinuxGameHost] Goodbye, world!");
+        Logger.Information("Goodbye, world!");
 
         base.OnDeactivated();
     }

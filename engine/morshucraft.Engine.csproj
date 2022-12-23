@@ -8,4 +8,7 @@
     <ProjectReference Include="..\api\morshucraft.API.csproj" />
     <ProjectReference Include="..\resources\morshucraft.Resources.csproj" />
   </ItemGroup>
+  <ItemGroup Label="Package References">
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" PrivateAssets="compile" />
+  </ItemGroup>
 </Project>

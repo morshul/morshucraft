@@ -4,7 +4,9 @@
 using System.Reflection;
 using morshucraft.API.Hosting;
 using morshucraft.API.Hosting.Modules;
-using morshucraft.Engine.Platform.Modules;
+using Serilog;
+using Serilog.Core;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace morshucraft.Engine.Platform.Hosting;
 
@@ -15,10 +17,17 @@ public abstract class GameHost : IGameHost
     public event Action? Activated;
     public event Action? Deactivated;
 
+    protected Logger Logger { get; }
+
     public bool IsActive { get; private set; }
 
     protected GameHost()
     {
+        Logger = new LoggerConfiguration()
+            .WriteTo.Console(
+                outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3} HOST] {Message:lj}{NewLine}{Exception}",
+                theme: ConsoleTheme.None)
+            .CreateLogger();
     }
 
     protected virtual void OnActivated()
@@ -65,6 +74,11 @@ public abstract class GameHost : IGameHost
             throw new NullReferenceException($"The module entry point is not a {nameof(ModuleHost)}.");
 
         module.Host = this;
+        module.Logger = new LoggerConfiguration()
+            .WriteTo.Console(
+                outputTemplate: $"[{{Timestamp:HH:mm:ss}} {{Level:u3}} {moduleEntryPoint.Name}] {{Message:lj}}{{NewLine}}{{Exception}}",
+                theme: ConsoleTheme.None)
+            .CreateLogger();
 
         modules.Add(module);
     }

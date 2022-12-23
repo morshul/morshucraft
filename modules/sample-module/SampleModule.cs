@@ -10,14 +10,14 @@ public sealed class SampleModule : ModuleHost
 {
     protected override void OnActivated()
     {
-        Console.WriteLine($"[SampleModule] Hello, world! Is game host active? {Host?.IsActive}");
+        Logger.Information("SampleModule has been activated! Is host active? {@IsActive}", Host?.IsActive);
 
         base.OnActivated();
     }
 
     protected override void OnDeactivated()
     {
-        Console.WriteLine($"[SampleModule] Goodbye, world! Is game host active? {Host?.IsActive}");
+        Logger.Information("SampleModule has been deactivated! Is host active? {@IsActive}", Host?.IsActive);
 
         base.OnDeactivated();
     }
